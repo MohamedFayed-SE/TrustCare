@@ -1,0 +1,278 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+   
+    
+}
+.loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#25185C;
+    z-index:555555555555555555555;
+    
+}
+.loading-icon p
+{
+    color: white;
+    font-size: 35px;
+    margin:auto;
+    font-style: italic;
+    font-weight: 700;
+}
+.bg
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 43, 44 ,.7);
+    z-index:5;
+    display: none;
+}
+.btn-info{background-color: blueviolet !important ;}
+.main-color
+{
+    color:rgba(36, 179, 164,1) !important;
+}
+/*------------nav Bar----------------------*/
+.navbar
+{
+    font-weight: 600;
+    font-size: 18px;
+     background-image: url(../imges/home-banner-bg.jpg);
+    background-size:100%;
+    background-position: center;
+    border-bottom: 3px solid rgba(36, 179, 164,.7);
+    
+
+}
+#main-nav
+{
+    background-color: teal;
+}
+.brand{
+    
+    font-weight: 800 !important;
+    font-style: italic;
+}
+.nav-link
+{
+   
+    padding: 7px 13px !important;
+    font-size: bolder !important;
+    color: black  !important;
+    
+}
+.active{
+    border:5% solid cyan;
+    background-color: cyan;
+    border-radius: 20%;
+}
+
+#signUp
+{
+    padding: 0 5px !important;
+    color: blue !important;
+}
+
+/*---------logIn Collapse---------------------*/
+.carsuol-login
+{
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(88, 83, 109);
+    position: absolute;
+    right: -300px;
+    top: 0;
+    z-index: 555555555;
+}
+.close{cursor: pointer;}
+.icon-links a 
+{
+
+    color: white !important;
+    padding: 0 8px;
+    transition: color 1s;
+}
+.icon-links a:hover
+{
+    color: blue !important;
+}
+.user-info
+{
+    margin: 0;
+    padding: 0;
+}
+.user-info i
+{
+    position: relative;
+    bottom: 28px;  
+}
+/*----------All About User Inputs--------------*/
+.user-info input
+{
+    padding-left: 40px;
+    position: relative;
+    border:none !important;
+    border-style: none;
+    background-color: white !important;
+
+}
+.password-icon
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.eye{
+    padding-right:15px;
+    cursor: pointer;
+    transition: 1s color;
+}
+.eye:hover{
+    color: blue;
+}
+div.line
+{
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 0;
+    margin: 0;  
+}
+.alert
+{
+    display: none;
+}
+
+/*------------Home Section-------------*/
+#home
+{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    background-image: url(../imges/home-banner-bg.jpg);
+    background-size: cover;
+    
+}
+.bg-img
+{
+    background-image: url(../imges/symptoms-bg.jpg);
+    background-size: cover;
+}
+/*---------------popular symPotoms Section----------- */
+#popularsymPotoms
+{
+    background-image: url(../imges/symptoms-bg.jpg);
+}
+.header
+{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    color:blueviolet;
+    padding: 35px 0;
+    margin: 10px 0;
+}
+/*----------number of Cornonavrius Cases Section------------*/
+.img
+{
+    padding: 15px 0;
+}
+.number 
+{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+.number-1::after
+{
+    content: 'Death';
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+.number-2::after
+{
+    content: 'Recoverd';
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+.number-3::after
+{
+    content: 'Cases';
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+.number-4::after
+{
+    content: 'suspected';
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+
+#NtritionHealth
+{
+    background-color:rgba(  43, 109, 128 );
+}
+/*--------------Get in touch-------------*/
+.user-massage h2
+{
+    font-size: 38px;
+    padding: 20px 10px;
+}
+.about p
+{
+    font-size: 18px;
+}
+.discover-links a
+{
+    display: block;
+    padding: 6px 0;
+    padding-left: 60px;
+
+    
+}
+/*-----------Footrs icons-----------*/
+.social-icon
+{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border:4px tomato solid;
+    transition: 1s;
+    
+}
+.social-icon a i
+{
+    color: gray;
+
+}
+.social-icon:hover 
+{
+   background-color: brown;
+}
+.social-icon:hover i
+{
+    color: white;
+}
+
+.social-icon a
+{
+   text-decoration: none;
+   color: red;
+   padding: 20px;
+   
+}
+
+
+
+
