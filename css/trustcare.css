@@ -12,7 +12,7 @@ body
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:#25185C;
+    background-color:#58547e;
     z-index:555555555555555555555;
     
 }
@@ -35,10 +35,22 @@ body
     z-index:5;
     display: none;
 }
-.btn-info{background-color: blueviolet !important ;}
+.btn-info{background-color: #58547e !important ;}
 .main-color
 {
-    color:rgba(36, 179, 164,1) !important;
+    color:#01cfbe !important;
+}
+.bg-color1
+{
+    background-color: #01cfbe;
+}
+.bg-color2
+{
+    background-color: #58547e;
+}
+.main-color1
+{
+    color: #58547e;
 }
 /*------------nav Bar----------------------*/
 .navbar
@@ -54,7 +66,7 @@ body
 }
 #main-nav
 {
-    background-color: teal;
+    background-color: #01cfbe;
 }
 .brand{
     
@@ -102,7 +114,7 @@ body
 }
 .icon-links a:hover
 {
-    color: blue !important;
+    color: brown !important;
 }
 .user-info
 {
@@ -136,7 +148,7 @@ body
     transition: 1s color;
 }
 .eye:hover{
-    color: blue;
+    color: brown;
 }
 div.line
 {
@@ -166,16 +178,13 @@ div.line
     background-size: cover;
 }
 /*---------------popular symPotoms Section----------- */
-#popularsymPotoms
-{
-    background-image: url(../imges/symptoms-bg.jpg);
-}
+
 .header
 {
     font-size: 50px;
     text-align: center;
     font-weight: 800;
-    color:blueviolet;
+    color:#58547e;
     padding: 35px 0;
     margin: 10px 0;
 }
@@ -187,7 +196,7 @@ div.line
 .number 
 {
     font-size: 20px;
-    color: black;
+    color: #58547e;
     font-weight: 700;
 }
 .number-1::after
@@ -221,7 +230,7 @@ div.line
 
 #NtritionHealth
 {
-    background-color:rgba(  43, 109, 128 );
+    background-color:#58547e;
 }
 /*--------------Get in touch-------------*/
 .user-massage h2
@@ -246,8 +255,6 @@ div.line
 {
     width: 43px;
     height: 43px;
-    border-radius: 50%;
-    border:4px tomato solid;
     transition: 1s;
     
 }
@@ -256,13 +263,9 @@ div.line
     color: gray;
 
 }
-.social-icon:hover 
-{
-   background-color: brown;
-}
 .social-icon:hover i
 {
-    color: white;
+    color: brown;
 }
 
 .social-icon a
