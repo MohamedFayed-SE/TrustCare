@@ -1,0 +1,474 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/trustcare.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="loading d-flex justify-content-center align-items-center">
+        <div class="loading-icon">
+            <img src="imges/check-1.png" alt="" class="fa-spin py-3 w-100">
+            <div class=" m-auto">
+                <p class="">loading</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+
+    </div>
+    <!-------------------NavBar------------------------->
+    <section id="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rounded">
+            <div class="container col-md-10 ">
+                <a class="navbar-brand" href="#home" class="">
+                    <div class="col-md-4 d-flex justify-content-between align-items-center">
+                        <img src="imges/check-1.png" alt="" class="w-75">
+                        <h3 class="px-2 brand main-color1">Trust Care</h3>
+                    </div>
+
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Blog
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Doctors</a>
+                                <a class="dropdown-item" href="#">Appointment</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="signUp">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#CarsuolSignUp">Sign up</a>
+                        </li>
+                        <li class="" id="logIn">
+                            <a class="nav-link" href="#">login</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <!------------------------USer CARSUOL LogIN--------------------------------------->
+            <div class="carsuol-login">
+                <div class="header-login d-flex justify-content-between align-items-center">
+                    <div class="close m-3">
+
+                        <i class="fas fa-times "></i>
+                    </div>
+                    <div class="icon-links m-3">
+                        <a href=""> <i class="fab fa-facebook fa-lg "></i></a>
+                        <a href=""> <i class="fab fa-instagram fa-lg "></i></a>
+                        <a href=""> <i class="fab fa-twitter fa-lg "></i></a>
+                        <a href=""> <i class="fab fa-linkedin fa-lg "></i></a>
+
+
+                    </div>
+                </div>
+                <h3 class="text-center my-5 text-white py-2">Log In</h3>
+                <form action="" class="from-group mx-3">
+                    <div class="user-info">
+                        <input type="text" placeholder=" Your Name" class="form-control" id="userName">
+                        <i class="fas fa-user px-2 fa-lg"></i>
+                        <div class="line"></div>
+                        <div class="alert alert-danger my-2" role="alert">
+                            please check your UserName
+                        </div>
+
+                    </div>
+                    <!-----------------Get Data OF Cureent User----------------------->
+                    <div class="user-info">
+                        <input type="password" placeholder=" Your password" class="form-control text-muted" id="userPassword">
+                        <div class="password-icon">
+                            <i class="fas fa-key fa-lg px-2 "></i>
+                            <i class="far fa-eye eye" aria-hidden="true"></i>
+                        </div>
+
+
+                        <div class="line"></div>
+                        <div class="alert alert-danger my-2" role="alert">
+                            please check your password
+                        </div>
+                    </div>
+                    <button class="btn btn-danger px-3 my-3" id="loginBtn">LogIn</button>
+
+                </form>
+
+            </div>
+
+
+        </nav>
+    </section>
+
+    <!----------------Carsuol Sign Up------------------------>
+    <section class="carsuol-signup">
+        <div class="modal fade " id="CarsuolSignUp" tabindex="-1" aria-labelledby="CarsuolSignUpLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content  m-auto">
+                    <div class="modal-header text-center bg-info">
+                        <h5 class="modal-title" id="CarsuolSignUpLabel">Regestration Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="text-center my-3">Sign UP</h2>
+                        <!-------------------------- Get Data OF New User-------------------------->
+
+                        <div class="user-info">
+                            <div class="alert alert-primary text-center" role="alert" id="validRegestration">
+                                you are successfully registered
+                            </div>
+                            <input type="text" placeholder=" Your Name" class="form-control text-muted" id="newUserName">
+                            <i class="fas fa-user px-2 fa-lg"></i>
+                            <div class="line"></div>
+
+                            <div class="alert alert-danger my-2" role="alert">
+                                please write your user Names
+                            </div>
+                            <div class="alert alert-danger my-2" role="alert" id="taken">
+                                please chose Another name this name has already taken
+                            </div>
+                        </div>
+
+                        <div class="user-info">
+                            <input type="email" placeholder=" Your Email" class="form-control text-muted" id="newUserEmail">
+                            <i class="fas fa-envelope p-2 fa-lg"></i>
+                            <div class="line"></div>
+                            <div class=" alert alert-danger my-2" role="alert">
+                                please write your email
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <input type="password" placeholder=" Your password" class="form-control text-muted" id="newUserPassword">
+                            <div class="password-icon">
+                                <i class="fas fa-key fa-lg px-2 "></i>
+                                <i class="far fa-eye eye" aria-hidden="true"></i>
+                            </div>
+                            <div class="alert alert-danger my-2" role="alert">
+                                please write your password
+                            </div>
+                        </div>
+
+
+                        <div class="modal-footer d-flex justify-content-between">
+                            <div class="icon-links m-3">
+                                <a href=""> <i class="fab fa-facebook fa-lg  text-danger"></i></a>
+                                <a href=""> <i class="fab fa-instagram fa-lg text-danger "></i></a>
+                                <a href=""> <i class="fab fa-twitter fa-lg  text-danger"></i></a>
+                                <a href=""> <i class="fab fa-linkedin fa-lg  text-danger"></i></a>
+                            </div>
+
+                            <div class="submit">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="regestrationBtn">Regestration</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------- Popular Diseases ------------------------>
+
+    <section id="home" class="py-5 bg-img">
+        <h2 class="heading header mt-5 py-5">Popular Diseases</h2>
+        <div class="container col-sm-11 py-2">
+            <div class="row home">
+                <!----------- IMage og Health Information-------------------->
+                <div class="col-md-4 health-img ">
+                    <img src="imges/man_img.png" alt="">
+                </div>
+                <!------------About health Information---------->
+                <div class="col-md-6 px-3 py-5  about-health">
+                    <h4 class="main-color font-weight-bold pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                    <div class="health-info ml-5 mr-1">
+                        <p class="main-color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat optio iure neque quasi rem minus excepturi ab praesentium eos laborum aliquam fuga distinctio ratione maiores delectus suscipit, cumque explicabo natus. Dolorem
+                            facilis sequi ad</p>
+                    </div>
+                    <div class="health-info ml-5 mr-1">
+                        <p class="main-color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum sed vero. Numquam, atque possimus.</p>
+                    </div>
+                    <div class=" text-center m-auto py-2">
+                        <button class="btn bg-color1 my-2 py-3 px-4 font-weight-bolder text-white">Symptom Checker</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------- Symptoms Details ------------------------>
+    <section id="about">
+        <div id="symptom1" class="container-fluid py-2 bg-color2 symptom">
+            <div class="row">
+                <div class="col-sm-5 py-5 symptoms">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2  text-white pl-4">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 py-5 text-center ">
+                    <img src="imges/headache-icon.png " alt=" " class="w-100">
+                </div>
+                <div class="col-sm-5 py-5 treatment">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 text-white pl-4">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="symptom2" class="container-fluid py-2 symptom">
+            <div class="row">
+                <div class="col-sm-5 py-5 symptoms">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 main-color1 pl-4">
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, sed.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 py-5 text-center mt-5">
+                    <img src="imges/ears-nose-and-throat-icon.png " alt=" " class="w-100">
+                </div>
+                <div class="col-sm-5 py-5 treatment">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 main-color1 pl-4">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="symptom3" class="container-fluid py-2 bg-color2 symptom">
+            <div class="row">
+                <div class="col-sm-5 py-5 symptoms">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 text-white pl-4">
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 py-5 text-center mt-5">
+                    <img src="imges/hyperthyroidism-icon.png" alt=" " class="w-100">
+                </div>
+                <div class="col-sm-5 py-5 treatment">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 text-white pl-4">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, animi consequuntur. Facilis assumenda deleniti voluptate.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="symptom4" class="container-fluid py-2 symptom">
+            <div class="row">
+                <div class="col-sm-5 py-5 symptoms ">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 main-color1 pl-4">
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui necessitatibus eos nesciunt.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 py-5 text-center mt-5">
+                    <img src="imges/crohns-disease-icon.png" alt=" " class="w-100">
+                </div>
+                <div class="col-sm-5 py-5 treatment">
+                    <h3 class="main-color">Lorem, ipsum.</h3>
+                    <ul class="pt-2 main-color1 pl-4">
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- btn up -->
+
+    <i class="fas fa-arrow-circle-up btn-up" aria-hidden="true"></i>
+
+    <!--------Contacts Section---------------->
+    <section dir="contacts" class=" bg-color3">
+        <div class="container">
+            <!--------Contacts Information  ---->
+            <div class="row">
+                <div class="col-md-4 py-4">
+                    <h2 class="main-color my-4 ml-5 py-2">Contacts</h2>
+                    <div class="contacts-icon d-flex">
+                        <div class="i px-3">
+                            <i class="fas fa-phone  text-muted"></i>
+                        </div>
+                        <div class="pl-2">
+                            <p class="px-1 ss main-color1"> Telephone : <span class="mx-2">+09 758 225</span></p>
+                        </div>
+                    </div>
+                    <div class="contacts-icon d-flex py-2">
+                        <div class="i px-3">
+                            <i class="fas fa-map-marker-alt  text-muted"></i>
+                        </div>
+
+                        <div class="pl-2">
+                            <p class="px-1 ss main-color1"> <span class="mx-2">34 Stone Street, Apt. 2A</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="contacts-icon d-flex py-2">
+                        <div class="i px-3">
+                            <i class="fab fa-linkedin  text-muted"></i>
+                        </div>
+
+                        <div class="pl-2">
+                            <a href="https://www.linkedin.com/feed/">
+                                <p class="px-1 ss main-color1"><span class="mx-2">Mohamed Fayed</span></p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="contacts-icon d-flex py-2">
+                        <div class="i px-3">
+                            <i class="fas fa-envelope text-muted"></i>
+                        </div>
+
+                        <div class="pl-2">
+                            <p class="px-1 ss main-color1"><span class="mx-2">modemohamed820@gmail.com</span></p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 discover-links">
+                    <h2 class="main-color  ml-5 py-2">Discover</h2>
+                    <a href="" class="main-color1 text-decoration-none">Discover 1</a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 2</a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 3</a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 5 </a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 6 </a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 7 </a>
+
+                </div>
+                <div class="col-md-4 about-content">
+                    <h2 class="main-color py-2">About</h2>
+                    <div class="about">
+                        <p class="pb-2 main-color1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias tenetur quasi .</p>
+                        <p class="main-color1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit magnam ab ipsa aliquam quam dignissimos, accusamus rem ipsum numquam quis non itaque, iste doloremque quod!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container text-center">
+            <div class="col-md-12 d-flex justify-content-center pt-4 pb-2">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="imges/check-1.png" alt="">
+                    <h3 class="px-2 brand main-color">Trust Care</h3>
+
+                </div>
+            </div>
+            <p class="text-muted">copyRight © 2021 Trust Care Organization List</p>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                        <a href=""> <i class="fab fa-facebook "></i></a>
+                    </div>
+                </div>
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                        <a href=""> <i class="fab fa-instagram "></i></a>
+                    </div>
+                </div>
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                        <a href=""> <i class="fab fa-twitter "></i></a>
+                    </div>
+                </div>
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center ">
+                        <a href=""> <i class="fab fa-linkedin  rounded"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/trustcare.js" type="module"></script>
+
+</body>
+
+</html>
