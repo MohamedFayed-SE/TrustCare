@@ -81,6 +81,21 @@ import {User} from './user.js'
     });
 }());
 
+/*---------------Btn Up------------------------------*/
+$('.btn-up').click(function() {
+    let homeSec = $('#home').offset().top;
+    $('body , html').animate({
+        scrollTop: homeSec
+    }, 2000)
 
 
+});
+$(window).scroll(function() {
+    let x = $(window).scrollTop();
+    if (x >= 800) {
+        $('.btn-up').fadeIn(1000);
+    } else {
+        $('.btn-up').fadeOut(1000);
+    }
+});
 
