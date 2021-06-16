@@ -59,11 +59,20 @@ body
     color: #58547e;
 }
 /*------------nav Bar----------------------*/
+.btn-up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999999999;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: teal;
+}
 .navbar
 {
     font-weight: 600;
     font-size: 18px;
-     background-image: url(../imges/home-banner-bg.jpg);
     background-size:100%;
     background-position: center;
     border-bottom: 3px solid rgba(36, 179, 164,.7);
@@ -300,6 +309,41 @@ div.line
    
 }
 
+/******************** Popular Symptoms styling ******************************/
 
+.health-img img {
+    width: 80%;
+    margin-left: 25%;
+}
+
+.about-health {
+    margin-left: 10%;
+}
+
+.health-info p {
+    font-size: 20px;
+}
+
+.symptoms {
+    padding-left: 7%;
+}
+
+.symptoms ul {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.treatment {
+    padding-left: 5%;
+}
+
+.treatment ul {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.symptom {
+    padding: 2% 7% 2% 7%;
+}
 
 
