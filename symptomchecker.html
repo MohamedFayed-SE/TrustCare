@@ -1,0 +1,639 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/trustcare.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <div class="loading d-flex justify-content-center align-items-center">
+        <div class="loading-icon">
+            <img src="imges/check-1.png" alt="" class="fa-spin py-3 w-100">
+            <div class=" m-auto">
+                <p class="">loading</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+
+    </div>
+    <!-------------------NavBar------------------------->
+    <section id="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top rounded">
+            <div class="container col-md-10 ">
+                <a class="navbar-brand" href="#home" class="">
+                    <div class="col-md-4 d-flex justify-content-between align-items-center">
+                        <img src="imges/check-1.png" alt="" class="w-75">
+                        <h3 class="px-2 brand main-color1">Trust Care</h3>
+                    </div>
+
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Blog
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Doctors</a>
+                                <a class="dropdown-item" href="#">Appointment</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="signUp">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#CarsuolSignUp">Sign up</a>
+                        </li>
+                        <li class="" id="logIn">
+                            <a class="nav-link" href="#">login</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <!------------------------USer CARSUOL LogIN--------------------------------------->
+            <div class="carsuol-login">
+                <div class="header-login d-flex justify-content-between align-items-center">
+                    <div class="close m-3">
+
+                        <i class="fas fa-times "></i>
+                    </div>
+                    <div class="icon-links m-3">
+                        <a href=""> <i class="fab fa-facebook fa-lg "></i></a>
+                        <a href=""> <i class="fab fa-instagram fa-lg "></i></a>
+                        <a href=""> <i class="fab fa-twitter fa-lg "></i></a>
+                        <a href=""> <i class="fab fa-linkedin fa-lg "></i></a>
+
+
+                    </div>
+                </div>
+                <h3 class="text-center my-5 text-white py-2">Log In</h3>
+                <form action="" class="from-group mx-3">
+                    <div class="user-info">
+                        <input type="text" placeholder=" Your Name" class="form-control" id="userName">
+                        <i class="fas fa-user px-2 fa-lg"></i>
+                        <div class="line"></div>
+                        <div class="alert alert-danger my-2" role="alert">
+                            please check your UserName
+                        </div>
+
+                    </div>
+                    <!-----------------Get Data OF Cureent User----------------------->
+                    <div class="user-info">
+                        <input type="password" placeholder=" Your password" class="form-control text-muted" id="userPassword">
+                        <div class="password-icon">
+                            <i class="fas fa-key fa-lg px-2 "></i>
+                            <i class="far fa-eye eye" aria-hidden="true"></i>
+                        </div>
+
+
+                        <div class="line"></div>
+                        <div class="alert alert-danger my-2" role="alert">
+                            please check your password
+                        </div>
+                    </div>
+                    <button class="btn btn-danger px-3 my-3" id="loginBtn">LogIn</button>
+
+                </form>
+
+            </div>
+
+
+        </nav>
+    </section>
+
+    <!----------------Carsuol Sign Up------------------------>
+    <section class="carsuol-signup">
+        <div class="modal fade " id="CarsuolSignUp" tabindex="-1" aria-labelledby="CarsuolSignUpLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content  m-auto">
+                    <div class="modal-header text-center bg-info">
+                        <h5 class="modal-title" id="CarsuolSignUpLabel">Regestration Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="text-center my-3">Sign UP</h2>
+                        <!-------------------------- Get Data OF New User-------------------------->
+
+                        <div class="user-info">
+                            <div class="alert alert-primary text-center" role="alert" id="validRegestration">
+                                you are successfully registered
+                            </div>
+                            <input type="text" placeholder=" Your Name" class="form-control text-muted" id="newUserName">
+                            <i class="fas fa-user px-2 fa-lg"></i>
+                            <div class="line"></div>
+
+                            <div class="alert alert-danger my-2" role="alert">
+                                please write your user Names
+                            </div>
+                            <div class="alert alert-danger my-2" role="alert" id="taken">
+                                please chose Another name this name has already taken
+                            </div>
+                        </div>
+
+                        <div class="user-info">
+                            <input type="email" placeholder=" Your Email" class="form-control text-muted" id="newUserEmail">
+                            <i class="fas fa-envelope p-2 fa-lg"></i>
+                            <div class="line"></div>
+                            <div class=" alert alert-danger my-2" role="alert">
+                                please write your email
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <input type="password" placeholder=" Your password" class="form-control text-muted" id="newUserPassword">
+                            <div class="password-icon">
+                                <i class="fas fa-key fa-lg px-2 "></i>
+                                <i class="far fa-eye eye" aria-hidden="true"></i>
+                            </div>
+                            <div class="alert alert-danger my-2" role="alert">
+                                please write your password
+                            </div>
+                        </div>
+
+
+                        <div class="modal-footer d-flex justify-content-between">
+                            <div class="icon-links m-3">
+                                <a href=""> <i class="fab fa-facebook fa-lg  text-danger"></i></a>
+                                <a href=""> <i class="fab fa-instagram fa-lg text-danger "></i></a>
+                                <a href=""> <i class="fab fa-twitter fa-lg  text-danger"></i></a>
+                                <a href=""> <i class="fab fa-linkedin fa-lg  text-danger"></i></a>
+                            </div>
+
+                            <div class="submit">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="regestrationBtn">Regestration</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------- Popular Diseases ------------------------>
+
+    <section id="checkerHome" class="py-5 bg-layer ">
+        <div class="container text-center">
+            <h5 class="main-color pt-5">You are not feeling well?</h5>
+            <h2 class="text-white pt-1">Symptoms Checker</h2>
+        </div>
+        <div class="container-fluid p-5 mt-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h3 class="text-white">Fill the simple form</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa magnam autem temporibus? Adipisci, dolorem.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <div class="media-icon main-color m-1 mr-2">
+                                    <i class="far fa-life-ring"></i>
+                                </div>
+                                <div class="media-content">
+                                    <h4 class="text-white">Lorem, ipsum.</h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <div class="media-icon main-color m-1 mr-2">
+                                    <i class="far fa-hand-point-up"></i>
+                                </div>
+                                <div class="media-content">
+                                    <h4 class="text-white">Lorem, ipsum.</h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <div class="media-icon main-color m-1 mr-2">
+                                    <ion-icon name="pricetags"></ion-icon>
+                                </div>
+                                <div class="media-content">
+                                    <h4 class="text-white">Lorem, ipsum.</h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="media">
+                                <div class="media-icon main-color m-1 mr-2">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <div class="media-content">
+                                    <h4 class="text-white">Lorem, ipsum.</h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="checker-form">
+                        <div class="form-input">
+                            <input type="text" placeholder="Start typing your symptoms">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 ml-5">
+                                <div class="gender">
+                                    <h5 class="text-white">What's your gender?</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                        <ion-icon name="man" class="check-icon"></ion-icon>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                        <ion-icon name="woman" class="check-icon"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="age form-input">
+                                    <input type="number" placeholder="What's your age?">
+                                </div>
+                                <button id="submit" type="submit" class="btn bg-color1 btn-set">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------- Symptoms Details ------------------------>
+    <section id="about">
+        <div class="container">
+            <h3 class="main-color1">How to use it?</h3>
+            <h6>Enter symptoms in your own words or pick from the drop-down list:</h6>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <ion-icon name="arrow-forward" class="main-color pl-5  pt-1"></ion-icon>
+                        </div>
+                        <div class="col-sm-10">
+                            <p>Medical terms are best but if you don’t know them, just enter your symptoms in normal, everyday language.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <ion-icon name="arrow-forward" class="main-color pl-5  pt-1"></ion-icon>
+                        </div>
+                        <div class="col-sm-10">
+                            <p>Enter each symptom separately or put them all on one line but separated by commas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <ion-icon name="arrow-forward" class="main-color pl-5  pt-1"></ion-icon>
+                        </div>
+                        <div class="col-sm-10">
+                            <p>Enter the meaning of abnormal test results in words rather than numbers: for example, ‘high blood pressure’ rather than ‘BP 160/100’
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- btn up -->
+
+    <i class="fas fa-arrow-circle-up btn-up" aria-hidden="true"></i>
+
+
+    <!---------------- Symptoms Slideshow ------------------------>
+    <div id="nutrition">
+        <h2 class="main-color1">Nutrition for your Health</h2>
+        <div id="carouselExampleIndicators" class="carousel slide w-50 m-auto h-auto" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="./imges/11.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imges/12.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imges/13.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imges/14.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imges/15.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imges/16.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- Corona Virus News ------------------------>
+    <section id="corona">
+        <h2 class="main-color1  text-center">How to protect yourself from Corona Virus?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./imges/ilustrasi-virus-corona_3005.jpg" class="w-100">
+                </div>
+                <div class="col-md-3">
+                    <h3 class="main-color">Should Do</h3>
+                    <div class="list pl-3 pt-3">
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <ion-icon name="home" class="main-color"></ion-icon>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-theater-masks main-color"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-box-tissue main-color"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-air-freshener main-color"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-hands-wash main-color"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <ion-icon name="thermometer" class="main-color"></ion-icon>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <ion-icon name="pint" class="main-color"></ion-icon>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="main-color">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="avoid">Should Avoid</h3>
+                    <div class="list pl-3 pt-3">
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-people-arrows avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-paw avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="far fa-surprise avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-handshake-slash avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-chair avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-tint-slash avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 pt-1">
+                                <i class="fas fa-plane-slash avoid"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="avoid">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--------Contacts Section---------------->
+    <section dir="contacts" class=" bg-color3">
+        <div class="container">
+            <!--------Contacts Information  ---->
+            <div class="row">
+                <div class="col-md-4 py-4">
+                    <h2 class="main-color my-4 ml-5 py-2">Contacts</h2>
+                    <div class="contacts-icon d-flex">
+                        <div class="i px-3">
+                            <i class="fas fa-phone  text-muted"></i>
+                        </div>
+                        <div class="pl-2">
+                            <p class="px-1 ss main-color1"> Telephone : <span class="mx-2">+09 758 225</span></p>
+                        </div>
+                    </div>
+                    <div class="contacts-icon d-flex py-2">
+                        <div class="i px-3">
+                            <i class="fas fa-map-marker-alt  text-muted"></i>
+                        </div>
+
+                        <div class="pl-2">
+                            <p class="px-1 ss main-color1"> <span class="mx-2">34 Stone Street, Apt. 2A</span></p>
+
+                        </div>
+
+                    </div>
+                    <div class="contacts-icon d-flex py-2">
+                        <div class="i px-3">
+                            <i class="fab fa-linkedin  text-muted"></i>
+                        </div>
+
+                        <div class="pl-2">
+                            <a href="https://www.linkedin.com/feed/">
+                                <p class="px-1 ss main-color1"><span class="mx-2">Mohamed Fayed</span></p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="contacts-icon d-flex py-2">
+                        <div class="i px-3">
+                            <i class="fas fa-envelope text-muted"></i>
+                        </div>
+
+                        <div class="pl-2">
+                            <p class="px-1 ss main-color1"><span class="mx-2">modemohamed820@gmail.com</span></p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 discover-links">
+                    <h2 class="main-color  ml-5 py-2">Discover</h2>
+                    <a href="" class="main-color1 text-decoration-none">Discover 1</a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 2</a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 3</a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 5 </a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 6 </a>
+                    <a href="" class="main-color1 text-decoration-none">Discover 7 </a>
+
+                </div>
+                <div class="col-md-4 about-content">
+                    <h2 class="main-color py-2">About</h2>
+                    <div class="about">
+                        <p class="pb-2 main-color1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias tenetur quasi .</p>
+                        <p class="main-color1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit magnam ab ipsa aliquam quam dignissimos, accusamus rem ipsum numquam quis non itaque, iste doloremque quod!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container text-center">
+            <div class="col-md-12 d-flex justify-content-center pt-4 pb-2">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="imges/check-1.png" alt="">
+                    <h3 class="px-2 brand main-color">Trust Care</h3>
+
+                </div>
+            </div>
+            <p class="text-muted">copyRight © 2021 Trust Care Organization List</p>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                        <a href=""> <i class="fab fa-facebook "></i></a>
+                    </div>
+                </div>
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                        <a href=""> <i class="fab fa-instagram "></i></a>
+                    </div>
+                </div>
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center">
+                        <a href=""> <i class="fab fa-twitter "></i></a>
+                    </div>
+                </div>
+                <div class="footer-icon px-2">
+                    <div class="social-icon d-flex justify-content-center align-items-center ">
+                        <a href=""> <i class="fab fa-linkedin  rounded"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/trustcare.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/20ce66009c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js "></script>
+
+</body>
+
+
+</html>
+
+</html>
