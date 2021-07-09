@@ -1,0 +1,164 @@
+body {
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    color: #58547e;
+}
+
+
+
+
+
+.appointment_box {
+    margin: 0px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 40px 0px rgb(51 48 78 / 15%);
+    text-align: left;
+    margin-bottom: -100px;
+    margin-top: 40px;
+}
+.row{
+    display: flex;
+}
+
+.col-md-8{
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.col-lg-12 {
+
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.container{
+    max-width: 960px;
+}
+
+.appoinment_form .form-group {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 23px;
+}
+.appoinment_form .form-group {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 23px;
+}
+
+
+.appoinment_form {
+    padding: 40px 25px 16px;
+}
+
+.appoinment_form .select_conversation {
+    display: inline-block;
+}
+.appoinment_form .select_conversation + .select_conversation {
+    margin-left: 5px;
+}
+.appoinment_form .select_conversation_inner h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #58547e;
+    margin-bottom: 10px;
+}
+
+.appoinment_form .checkbox_field .green_btn {
+    border: 0px;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 0px 37px;
+}
+.green_btn {
+    background: #01cfbe;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0px 29.5px;
+    display: inline-block;
+    font: 700 16px/50px "Quicksand", sans-serif;
+    transition: all 300ms linear 0s;
+}
+
+
+.appoinment_form .checkbox_field {
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.appoinment_form .checkbox_field .checkbox label::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: #58547e;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.appoinment_form .select_conversation_inner {
+    padding-top: 0px;
+}
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.appointment_box .appoinment_features .appoinment_features_item i {
+    font-size: 42px;
+    color: #01cfbe;
+    margin-right: 20px;
+}
+
+.appoinment_form .checkbox_field .checkbox label {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #58547e;
+    padding-left: 34px;
+    line-height: 24px;
+}
+
+.linearicons-medal-empty:before {
+    content: "\e6dd";
+}
+i:before {
+    margin-left: 0px !important;
+}
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
+
+.appoinment_form .form-control {
+    border-radius: 0px;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 16px;
+    border: 0px;
+    border-bottom: 2px solid #58547e;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: transparent;
+}
+
+.appoinment_form label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #58547e;
+    position: absolute;
+    top: 20px;
+    line-height: 16px;
+    left: 12px;
+    margin-bottom: 0;
+    font-family: "Quicksand", sans-serif;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
